@@ -1,0 +1,292 @@
+body {
+  font-size: 16px;
+  color: #3E627A;
+  background-color: #90EE90;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+/** HEADER **/
+#header-nav {
+  background-color: #588BAE;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/recycling_logo_150x150.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {
+  /* Site Name */
+  font-family: 'Lora', serif;
+  color: #90EE90;
+  font-size: 2.4vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 1.5px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+
+.navbar-brand p span {
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color:#90EE90;
+  text-align: center;
+  text-shadow: 1.5px 1.5px 1.5px #222;
+}
+  
+#nav-list a:after {
+  content: "";
+  position: absolute;
+  left:0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width .3s ease-in-out;
+}
+#nav-list a:hover:after {
+  width: 100%;
+}
+
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 1px solid #61122f;
+  background-color: #90EE90;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+#jumboimg {
+  background: url('../images/recycleMain.png') no-repeat;
+  width: 600px;
+  height: 600px;
+  margin: 0px 10px 0px 0;
+}
+
+body::-webkit-scrollbar {
+  width: 2em;
+  background-color: whitesmoke;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-image: url("../images/scrollbar.png");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+} 
+
+/*Attention Grabber*/
+
+#howtohelp h2 {
+  margin-top: -400px;
+  font-size: 3vw;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #3E627A;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #3E627A,
+    1px 2px 0px #90EE90,
+    1px 3px 0px #3E627A,
+    1px 4px 0px #90EE90,
+    1px 5px 0px #3E627A,
+    1px 6px 0px #90EE90,
+    1px 10px 5px rgba(16, 16, 16, 0.5),
+    1px 15px 10px rgba(16, 16, 16, 0.4),
+    1px 20px 30px rgba(16, 16, 16, 0.3),
+    1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+.parallax {
+  background-image: url('../images/underwater.png');
+  background-size: cover;
+  background-position: center;
+  margin-top: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.parallax2 {
+  background-image: url('../images/plastic.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.parallax h2{
+  color: #90EE90;
+}
+
+  /*Footer*/
+  .panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #588BAE;
+    border-top: 0;
+    color: #E7E7E7;
+  }
+  .panel-footer a{
+    color: #E7E7E7;
+  }
+  .panel-footer div.row {
+    margin-bottom: 35px;
+  }
+  #site-map, #contact {
+    line-height: 2;
+  }
+  #site-map > span, #contact > span {
+    font-size: 1.3em;
+  }
+
+  #logo img{
+    padding: 1vw;
+  }
+
+  #logo h2{
+    color: #90EE90;
+  }
+
+  #credit {
+    text-align: center;
+  }
+
+  svg {
+    fill: none;
+    display: block; margin: auto
+  }
+
+  #Vector1{
+    stroke-dasharray: 1164.698;
+    stroke-dashoffset: 1164.698;
+    animation: sign 4s ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes sign {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 768x;
+  }
+  #jumboimg {
+    background-position: center top;
+  }
+  .parallax {
+    margin-top: 800px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 2.4vw;
+  }
+}
+
+@media (max-width: 767px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 767px;
+  }
+
+  #jumboimg {
+  background-image: url(../images/recycleMain-350-356.png);
+  background-position: left top;
+  }
+
+  .parallax {
+    margin-top: 800px;
+  }
+
+  #newlife {
+    margin-top: -250px
+  }
+
+  #map-tile{
+    height: 400px;
+    width: 400px;
+    resize: both;
+    overflow: auto;
+  }
+
+  .navbar-brand h1 {
+    font-size: 3.5vw;
+  }
+  
+}
