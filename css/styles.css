@@ -14,9 +14,10 @@ body {
 }
 
 #logo-img {
-  background: url('../images/recycling_logo_150x150.png') no-repeat;
+  background: url('../images/EDU_home_image.png') center;
+  background-size: cover;
   width: 150px;
-  height: 150px;
+  height: 120px;
   margin: 10px 15px 10px 0;
 }
 
@@ -55,6 +56,10 @@ body {
 
 #nav-list {
   margin-top: 10px;
+}
+
+.list-inline-item {
+  margin-right: 20px;
 }
 
 #nav-list a {
@@ -102,7 +107,7 @@ body {
 /* MAIN */
 
 #jumboimg {
-  background: url('../images/recycleMain.png') no-repeat;
+  background: url('../images/EDU_logo.png') no-repeat;
   width: 600px;
   height: 600px;
   margin: 0px 10px 0px 0;
@@ -143,7 +148,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .parallax {
-  background-image: url('../images/underwater.png');
+  background-image: url('../images/classroom_parallax.jpg');
   background-size: cover;
   background-position: center;
   margin-top: 600px;
@@ -155,7 +160,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .parallax2 {
-  background-image: url('../images/plastic.jpeg');
+  background-image: url('../images/ai_teacher.jpg');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -166,8 +171,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .parallax h2{
-  color: #90EE90;
+  color: black;
 }
+
+#footerimg {
+  background: url('../images/EDU_home_image.png') center;
+  background-size: cover;
+  width: 150px;
+  height: 120px;
+  
+}
+
+
 
   /*Footer*/
   .panel-footer {
@@ -253,6 +268,10 @@ body::-webkit-scrollbar-thumb {
   .navbar-brand h1 {
     font-size: 2.4vw;
   }
+
+  .parallax h2{
+    overflow-wrap: normal;
+  }
 }
 
 @media (max-width: 767px) {
@@ -274,6 +293,10 @@ body::-webkit-scrollbar-thumb {
     margin-top: 800px;
   }
 
+  .parallax h2{
+    overflow-wrap: normal;
+  }
+
   #newlife {
     margin-top: -250px
   }
@@ -289,4 +312,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 3.5vw;
   }
   
+}
+
+@media (max-width: 520px) {
+
+  .parallax h2{
+    visibility: hidden;
+  }
+
 }
